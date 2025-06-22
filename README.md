@@ -1,77 +1,96 @@
-# ECONOMOUS - Personal Blog
+# DAVID'S MARGINS - Personal Blog
 
 A modern, responsive personal blog focused on economic insights and analysis.
 
+## Project Structure
+
+```
+├── index.html              # Main HTML file
+├── package.json            # Project configuration
+├── README.md              # Documentation
+├── assets/                # Static assets
+│   ├── css/
+│   │   └── main.css       # Consolidated styles
+│   └── js/
+│       └── script.js      # JavaScript functionality
+└── components/            # Reusable components
+    ├── digital-clock.html
+    ├── left-pane.html
+    ├── middle_pane.html
+    └── right_pane.html
+```
+
 ## Features
 
-- **Clean, Modern Design**: Minimalist layout with professional styling
+- **Clean, Modern Design**: Minimalist three-pane layout with professional styling
 - **Responsive Layout**: Works seamlessly on desktop, tablet, and mobile devices
-- **Single Page Application**: Smooth navigation between sections without page reloads
-- **Image Gallery**: Slideshow functionality for displaying images
-- **Economic Focus**: Dedicated to thoughts on local, regional, national, and international economics
+- **Component-Based Architecture**: Modular components for easy maintenance
+- **Typography**: Uses Karla font for a clean, modern aesthetic
+- **Organized Structure**: Clear separation of concerns with dedicated directories
 
-## Structure
+## Development
 
-### Files
-- `index.html` - Main HTML structure
-- `style.css` - CSS styling and responsive design
-- `script.js` - JavaScript functionality for navigation and interactivity
-- `README.md` - This documentation file
+### Local Development
+```bash
+# Start a local development server
+npm run dev
+# or
+python3 -m http.server 8000
+```
 
-### Sections
-1. **Page One** - Main content section with Lorem ipsum placeholder
-2. **Page Two** - Secondary content section
-3. **Page Three** - Additional content (coming soon)
-4. **Page Four** - Additional content (coming soon)
+Then open `http://localhost:8000` in your browser.
+
+### File Organization
+
+- **`assets/css/`**: All stylesheets consolidated into `main.css`
+- **`assets/js/`**: JavaScript files
+- **`components/`**: Reusable HTML components for each pane
+- **`index.html`**: Main entry point that assembles all components
 
 ## Customization
 
 ### Adding Content
-1. Edit the HTML in `index.html` to replace placeholder text with your actual content
-2. Replace placeholder images with your own images
-3. Update the Instagram link in the footer to your actual social media
+1. Edit component files in the `components/` directory
+2. Modify `assets/css/main.css` for styling changes
+3. Update `assets/js/script.js` for interactive functionality
 
 ### Styling
-- Modify `style.css` to change colors, fonts, and layout
-- The color scheme uses a black/white/gray palette for professional appearance
-- CSS Grid is used for the column layout
+- The CSS is organized into logical sections:
+  - Base styles
+  - Layout
+  - Pane styles
+  - Components
+  - Responsive design
 
-### Functionality
-- `script.js` handles section navigation and slideshow functionality
-- Easy to extend with additional features like contact forms or analytics
-
-## Development
-
-To run locally:
-1. Open `index.html` in a web browser
-2. Or serve with a local web server for best results
+### Components
+Each pane is modularized:
+- **Left Pane**: Digital clock, site title, about section
+- **Middle Pane**: Main content and work portfolio
+- **Right Pane**: Navigation and additional information
 
 ## Deployment
 
-This blog is ready for deployment to:
+This site is ready for deployment to:
 - GitHub Pages
 - Netlify
 - Vercel
 - Any static hosting service
 
-Simply upload the files to your hosting provider.
-
 ## Browser Support
 
 - Modern browsers (Chrome, Firefox, Safari, Edge)
 - Responsive design supports mobile devices
-- CSS Grid and Flexbox used for layout
+- CSS Grid and Flexbox for layout
+- Progressive enhancement approach
 
-## Future Enhancements
+## Contributing
 
-- Contact form implementation
-- Blog post management system
-- RSS feed
-- Search functionality
-- Comments system
-- Analytics integration
+1. Make changes to component files in `components/`
+2. Update styles in `assets/css/main.css`
+3. Test locally with `npm run dev`
+4. Commit and push changes
 
 ---
 
-*Built with HTML, CSS, and vanilla JavaScript for optimal performance and simplicity.*
+*Built with semantic HTML, organized CSS, and vanilla JavaScript for optimal performance and maintainability.*
 

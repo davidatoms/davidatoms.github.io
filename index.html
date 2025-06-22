@@ -3,124 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECONOMOUS - Personal Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>DAVID'S MARGINS</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header>
-        <h1><a href="#" rel="home-page">ECONOMOUS</a></h1>
-        <p>Thoughts on local, regional, national, and international economics.</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#page-1" rel="history">Page One</a></li>
-            <li><a href="#page-2" rel="history">Page Two</a></li>
-            <li><a href="#page-3" rel="history">Page Three</a></li>
-            <li><a href="#page-4" rel="history">Page Four</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="page-1" class="page-section">
-            <div class="column-set">
-                <div class="column-unit left-column">
-                    <h2><a href="page-1" rel="history">Page One</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere in tortor in cursus. Aliquam iaculis enim sit amet diam pharetra volutpat. Etiam male.</p>
-                    <p>Proin Rhoncus enim sit amet<br>
-                    Morbi cons<br>
-                    Aliquam tinci dapib&nbsp;</p>
-                </div>
-                <div class="column-unit right-column">
-                    <p>34/98/5973</p>
-                    <div class="gallery-slideshow">
-                        <div class="media-item">
-                            <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
-                            <figcaption class="caption empty"></figcaption>
-                        </div>
-                        <div class="media-item">
-                            <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
-                            <figcaption class="caption empty"></figcaption>
-                        </div>
-                        <div class="media-item">
-                            <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
-                            <figcaption class="caption empty"></figcaption>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="page-2" class="page-section">
-            <div class="column-set">
-                <div class="column-unit left-column">
-                    <h2><a href="page-2" rel="history">Page Two</a></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere in tortor in cursus. Aliquam iaculis enim sit amet diam pharetra volutpat. Etiam male.</p>
-                    <p>Proin Rhoncus enim sit amet<br>
-                    Morbi cons<br>
-                    Aliquam tinci dapib</p>
-                </div>
-                <div class="column-unit right-column">
-                    <p>34/98/5973</p>
-                    <div class="gallery-slideshow">
-                        <div class="media-item">
-                            <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
-                            <figcaption class="caption empty"></figcaption>
-                        </div>
-                        <div class="media-item">
-                            <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
-                            <figcaption class="caption empty"></figcaption>
-                        </div>
-                        <div class="media-item">
-                            <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
-                            <figcaption class="caption empty"></figcaption>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="page-3" class="page-section">
-            <div class="column-set">
-                <div class="column-unit left-column">
-                    <h2><a href="page-3" rel="history">Page Three</a></h2>
-                    <p>Coming soon - more economic insights and analysis.</p>
-                </div>
-                <div class="column-unit right-column">
-                    <div class="gallery-slideshow">
-                        <div class="media-item">
-                            <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
-                            <figcaption class="caption empty"></figcaption>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="page-4" class="page-section">
-            <div class="column-set">
-                <div class="column-unit left-column">
-                    <h2><a href="page-4" rel="history">Page Four</a></h2>
-                    <p>More content and economic discussions to follow.</p>
-                </div>
-                <div class="column-unit right-column">
-                    <div class="gallery-slideshow">
-                        <div class="media-item">
-                            <img src="https://via.placeholder.com/600x400" alt="Placeholder image">
-                            <figcaption class="caption empty"></figcaption>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p><a href="contact-form" rel="history" target="_blank">Email</a></p>
-        <p><a href="https://www.instagram.com/cargoworld/" target="_blank">Instagram</a></p>
-    </footer>
-
-    <script src="script.js"></script>
+    <div class="main-container">
+        <aside class="left-pane">
+            <a href="#" rel="home-page" class="pane-header">DAVID'S MARGINS</a><br>
+            <span class="digital-clock" style="color: rgba(0, 0, 0, 0.4);">
+                <svg class="clock-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"></circle>
+                    <line x1="12" y1="12" x2="12" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                    <line x1="12" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+                </svg>
+                <digital-clock pad-hour="true" twentyfour-hour="true"></digital-clock>
+            </span><br>
+            <label class="dark-mode-toggle"><input type="checkbox" id="dark-toggle"> Dark mode</label><br>
+            <label class="ai-mode-toggle"><input type="checkbox" id="ai-toggle"> Enable AI</label><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr>ABOUT<br><a href="contact-form" rel="history">davidadams14159@gmail.com</a><br><a href="https://www.instagram.com/davidadams2718/" target="_blank">Instagram</a><br>
+            <br>
+            <div style="text-align: left;">Vestibulum et dignissim magna. Nullam at ultrices felis. Suspendisse facilisis sagittis sem sit amet tempor. Nam sit amet nibh et enim laoreet porta sit amet vel purus. Maecenas augue velit, feugiat in maximus id, auctor vel ex. Integer placerat massa nec tellus.</div><br><a href="contact-form" rel="history">CONTACT</a>
+        </aside>
+        <main class="middle-pane">
+            <span class="pane-header">WORK</span><br>
+            <br>
+            <a href="work/index.html">View All Projects →</a><br>
+            <br>
+            <br>
+            <hr><media-item class="" hash="Z2231214497619313462989568739158"></media-item><br>
+            <br>
+            <column-set gutter="1rem"><column-unit slot="0"><a href="work/most-recent-blog-post.html">Most Recent Blog Post</a><br></column-unit><column-unit slot="1"><a href="work/most-recent-blog-post.html"><i>Nemo Ipsum Dolorem</i>, quae Amet Id Magna</a><br>Duis Voluptas Officia (1925–2006)<br>Est Commodo Dignissim<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta ex a porta blandit. Suspendisse feugiat justo at mauris molestie molestie. Ut mattis urna sed sem pulvinar, vitae rutrum nulla ultrices. Curabitur laoreet erat et sapien venenatis luctus.<br></column-unit></column-set><br><br><hr><media-item class="" hash="Z2231214497619313462989568739158"></media-item><br>
+            <br>
+            <column-set gutter="1rem"><column-unit slot="0"><a href="work/test-project-2.html">2. Test Project</a><br></column-unit><column-unit slot="1">
+            <a href="work/test-project-2.html"><i>Id Tempore quo Esse</i></a><br>Voluptate, 1996<br>Nemo-Autem Dolor sed Velit Fugiat<br>
+            <br><ul class="lineated"><li>Id Velit et Ipsum Neque ut eum Consequatur, Nulla, Eaque</li></ul><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta ex a porta blandit. Suspendisse feugiat justo at mauris molestie molestie. Ut mattis urna sed sem pulvinar, vitae rutrum nulla ultrices. Curabitur laoreet erat et sapien venenatis luctus.<br></column-unit></column-set><br><br>
+            <hr><media-item class="" hash="Z2231214497619313462989568739158"></media-item><br>
+            <br>
+            <column-set gutter="1rem"><column-unit slot="0">3. Test Project<br></column-unit><column-unit slot="1">Nam Minus, <i>E Voluptate</i><br>Deserunt<br>Quis Fugiat Ipsumae, 1980<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta ex a porta blandit. Suspendisse feugiat justo at mauris molestie molestie. Ut mattis urna sed sem pulvinar, vitae rutrum nulla ultrices. Curabitur laoreet erat et sapien venenatis luctus.<br></column-unit></column-set><br><br><hr><media-item class="" hash="W2231214757460150485262312802134"></media-item><br>
+            <br>
+            <column-set gutter="1rem"><column-unit slot="0">4. Test Project<br></column-unit><column-unit slot="1">Est Tempora Dolorem, <i>At Quo sit Laborum</i><br>1997/98<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta ex a porta blandit. Suspendisse feugiat justo at mauris molestie molestie. Ut mattis urna sed sem pulvinar, vitae rutrum nulla ultrices. Curabitur laoreet erat et sapien venenatis luctus.<br></column-unit></column-set><br><br>
+            <hr><media-item class="" hash="Z2231214497619313462989568739158"></media-item><br>
+            <br>
+            <column-set gutter="1rem"><column-unit slot="0"><a href="work/test-project-5.html">5. Test Project</a><br></column-unit><column-unit slot="1"><a href="work/test-project-5.html">Ipsuma Dolor, <i>Quas Fugiat dolorem</i></a><br>1974<br>5-7/8 x 4-1/4 inches<br>eaque voluptate consequi on dolor<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta ex a porta blandit. Suspendisse feugiat justo at mauris molestie molestie. Ut mattis urna sed sem pulvinar, vitae rutrum nulla ultrices. Curabitur laoreet erat et sapien venenatis luctus.<br></column-unit></column-set><br><br><hr><media-item class="" hash="Z2231214497619313462989568739158"></media-item><br>
+            <br>
+            <column-set gutter="1rem"><column-unit slot="0">6. Test Project<br></column-unit><column-unit slot="1">Nihil Tempus<br>LABORUM IPSUM, 1988<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta ex a porta blandit. Suspendisse feugiat justo at mauris molestie molestie. Ut mattis urna sed sem pulvinar, vitae rutrum nulla ultrices. Curabitur laoreet erat et sapien venenatis luctus.<br></column-unit></column-set><br><br>
+            <hr><media-item class="" hash="Z2231214497619313462989568739158"></media-item><br>
+            <br>
+            <column-set gutter="1rem"><column-unit slot="0">7. Test Project<br></column-unit><column-unit slot="1">
+            <i>Nam Officiis Minus</i><br>Volent Voluptatum, 1984<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta ex a porta blandit. Suspendisse feugiat justo at mauris molestie molestie. Ut mattis urna sed sem pulvinar, vitae rutrum nulla ultrices. Curabitur laoreet erat et sapien venenatis luctus.<br></column-unit></column-set><br><br><hr><media-item class="" hash="Z2231214497619313462989568739158"></media-item><br>
+            <br>
+            <column-set gutter="1rem"><column-unit slot="0">8. Test Project<br></column-unit><column-unit slot="1">
+            <i>Molestiae natus veritati</i><br>Ipsum Dolore, 1991<br>Quos Ratione<br>
+            <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta ex a porta blandit. Suspendisse feugiat justo at mauris molestie molestie. Ut mattis urna sed sem pulvinar, vitae rutrum nulla ultrices. Curabitur laoreet erat et sapien venenatis luctus.<br></column-unit></column-set><br>
+            <br>
+            <hr><br><br><br><span style="color: rgba(0, 0, 0, 0.4);">
+            © CARGO TEST 2027 </span>
+        </main>
+        <aside class="right-pane">
+            <span class="pane-header">NAVIGATION</span><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr><column-set gutter="1rem"><column-unit slot="0" span="4">Resume<br></column-unit><column-unit slot="1" span="8"><strong>Experience</strong><br>
+            Full-stack AI Engineer – Current, The Daily Shot<br>
+            • Built AI automation systems for content serving 180,000 paid subscribers.<br>
+            • Engineered AI-generated workflow descriptions increasing revenue and cutting costs.<br>
+            • Modernized 80,000+ historical charts using advanced AI tools.<br>
+            • Developed proprietary algorithms for data processing & visualizations.<br>
+            <br>
+            AI Strategy Consultant, Blackrock Microsystems – Mar 2025 – Jun 2025<br>
+            • Revenue analysis, clinical-trial assessments, software-dev strategy.<br>
+            • Designed neural signal data-acquisition systems and UI stress tests.<br>
+            • Market analysis of BCI landscape incl. Apple Vision Pro integration.<br>
+            <br>
+            AI Training Specialist, Scale AI – Mar 2024 – Dec 2024<br>
+            • Specialised in mathematics & API-integration training for LLMs.<br>
+            • Optimised token usage across Google-API systems.<br>
+            <br>
+            Ski Lift Operator, Deer Valley Resort – during studies<br>
+            • Operated lifts, assisted guests, networked and performed PE research.<br>
+            <br>
+            Summer Investment Banking Intern, Mountain Pacific Partners – May 2020 – Oct 2020<br>
+            • Evaluated biotech & neuro-tech investments; pitched AI-in-Healthcare thesis.<br>
+            <br>
+            Neuroscience Marketing Research Associate, UVU SMARTLab – May 2017 – Aug 2019<br>
+            • Analysed consumer behaviour via physiological & neural data.<br>
+            <br>
+            <strong>Education</strong><br>
+            M.S. Economics & Grad Cert Finance – Johns Hopkins Univ., 2025<br>
+            M.Eng. Artificial Intelligence (Deferred) – Johns Hopkins Univ.<br>
+            B.A. Philosophy (Honours) – Utah Valley Univ., 2021<br>
+            <br>
+            <strong>Selected Skills</strong><br>
+            Financial modelling, M&A, econometrics; Python, SQL, JavaScript, Rust.
+            </column-unit></column-set><br><br>
+            <hr><column-set gutter="1rem"><column-unit slot="0" span="4">Macro<br></column-unit><column-unit slot="1" span="8">Vestibulum Euismod Ultrices (Congue)<br>
+            Suspendisse Aenean Lectus<br>
+            2023<br>
+            <br>
+            Vestibulum Euismod Ultrices (Tincidunt)<br>
+            <br>
+            Aliquam Faucibus Tellus<br>
+            (3 years)</column-unit></column-set><br><br>
+            <br><hr><column-set gutter="1rem"><column-unit slot="0" span="4">Micro&nbsp;</column-unit><column-unit slot="1" span="8">Vestibulum Ultricies<br>
+            Suspendisse Aenean Vestibulum<br>
+            2023 - 2024<br>
+            <br>
+            Pellentesque Habitant<br>
+            'Morbi Tristique Senectus'<br>
+            Nunc Euismod Faucibus,<br>
+            Porta Libero<br>
+            2024<br>
+            <br>
+            Volutpat Ultricies<br>
+            Curabitur Fringilla Ornare,<br>
+            Duis Quis<br>
+            (since 2020)<br>
+            <br>
+            Aliquam Convallis<br>
+            <i>TEMPUS, TEMPUS, TEMPUS</i><br>
+            Molestie Vulputate<br>
+            Lacus Venenatis<br>
+            2023<br>
+            <br>
+            Nunc Consequat<br>
+            Donec Euismod Imperdiet,<br>
+            Pharetra Massa<br>
+            2023<br>
+            <br>
+            Volutpat Ultricies<br>
+            Mauris Tristique Congue, Tellus,<br>
+            Suspendisse Aenean, Porta Libero,<br>
+            Gravida Faucibus<br>
+            2023<br>
+            <br>
+            Fusce Suscipit Ligula / Bibendum / Sollicitudin<br>
+            Ipsum Tristique<br>
+            2022<br>
+            <br>
+            Accumsan Dui<br>
+            'Integer Consequat'<br>
+            Purus Euismod Facilisis, Pharetra Massa<br>
+            2022<br>
+            <br>
+            TEMPUS, TEMPUS, TEMPUS<br>
+            Aliquam Faucibus Tellus, Euismod Ornare<br>
+            Tincidunt Quam<br>
+            2021<br>
+            <br>
+            Facilisis Felis Vestibulum<br>
+            Imperdiet Sodales / Volutpat<br>
+            2021<br>
+            <br>
+            Aliquam Faucibus Tellus,<br>
+            Ipsum Tristique, Vestibulum Lectus<br>
+            <br>
+            Curabitur Commodo Tempor Ultrices, Porta Libero, Congue Mattis<br>
+            2021<br>
+            <br>
+            Venenatis Ligula Pellentesque<br>
+            Heidi Vitae Ornare Ultricies,<br>
+            Pharetra Massa,<br>
+            2020–2022<br>
+            <br>
+            Ultricies Auctor Lectus Condimentum<br>
+            2019<br>
+            <br>
+            Latrobe Vitae Nisl Congue, Ornare Euismod<br>
+            2019<br>
+            <br>
+            Nunc Facilisis Placerat,<br>
+            Egestas Porttitor Ipsum<br>
+            2019<br>
+            <br>
+            National Tristique Ornare (NTO),<br>
+            Vel Vestibulum Fringilla<br>
+            2018<br>
+            <br>
+            Duis Vitae Ultricies,<br>
+            Aliquet Rhoncus Augue<br>
+            2017</column-unit></column-set><br><br><br>
+            <hr><column-set><column-unit slot="0" span="4">Reads</column-unit><column-unit slot="1" span="8">Tincidunt Nibh<br>Ultricies Vestibulum<br>Facilisis Ornare,<br>Porta Libero Universitas,<br>tincidunt.nibh@portolibero.edu.au<br>0431 070 713<br>
+            <br>Dictumst Gravida<br>Auctor Ligula / Founder<br>Aliquam Aliquam Congue, Felis<br>dictumst.gravida@gmail.com<br>0404 965 983<br>
+            <br>Rhoncus Mattis<br>Suspendisse Professor<br>Facilisis, Bibendum Ornare &amp; Congue<br>0415 843 581<br>rhoncus.mattis@facilisis.edu<br>
+            <br>Sollicitudin Euismod<br>Founder<br>Pellentesque Grounds, Porta Libero<br>0422 221 072<br>sollicitudin@vestibulum.com<br>
+            <br>Egestas Convallis<br>Deputy Parturient Dictum<br>Duis &amp; Ultricies Vestibulum<br>egestas.convallis@vestibulum.edu<br>0402 254 956<br></column-unit></column-set><br><br>
+            <br>
+            <hr><column-set gutter="1rem"><column-unit slot="0" span="4">Code<br></column-unit><column-unit slot="1" span="8">Vestibulum Ultrices<br>
+            Congue Nisl<br>
+            Tincidunt Euismod<br>
+            Auctor Gravida<br>
+            Molestie Vulputate<br>
+            Tempor<br>
+            Parturient<br>
+            Nibh Ultricies<br>
+            Aliquet Pellentesque<br>
+            Rhoncus Tempor<br>
+            Ullamcorper / Ornare<br>
+            Porttitor Quisque<br>Lacinia<br>
+            Bibendum Facilisis<br>
+            Suspendisse Tristique<br>
+            Viverra Dictum<br>
+            Duis Convallis Et Congue<br>
+            Semper Facilisis<br>
+            </column-unit></column-set><br><br><br><hr><column-set gutter="1rem" mobile-hide-empty="false" mobile-stack="true"><column-unit slot="0" span="4">Social</column-unit><column-unit slot="1" span="8">(<i>upcoming</i>) Tincidunt TBA<br>
+            Ultricies Ultricies,<br>
+            Congue Nisl<br>
+            2024<br>
+            <br>
+            (<i>upcoming</i>) Vestibulum-Vitae<br>
+            Auctor Ipsum,<br>
+            Dictumst Ligula,<br>
+            Porta Libero<br>
+            2024<br>
+            <br>
+            <i>Suspendisse</i><br>
+            Molestie Aenean,<br>
+            Facilisis Tellus,<br>
+            Porta Libero<br>
+            2024<br>
+            <br>
+            <i>Ultrices</i><br>
+            Parturient Felis,<br>
+            Pharetra Nibh,<br>
+            Porta Libero<br>
+            2023<br>
+            <br>
+            <i>Bibendum</i><br>
+            Adipiscing Nunc,<br>
+            Tincidunt Tristique Congue,<br>
+            Vestibulum Porta Libero<br>
+            2023<br>
+            <br>
+            Eu &amp; Fringilla, Collaborative Imperdiet with Quam Sodales,<br>
+            Donec Tristique Porta Libero<br>
+            2023<br>
+            <br>
+            <i>Semper</i><br>
+            Cursus Tempus,<br>
+            Porta Libero<br>
+            2023<br>
+            <br>
+            Dictum, Elit. Vestibulum<br>
+            Gravida Congue<br>
+            2023<br>
+            <br>
+            <i>Rhoncus Congue</i><br>
+            Ullamcorper Suspendisse,<br>
+            Duis Ornare Porta Libero<br>
+            2023<br>
+            <br>
+            <i>Pellentesque Ornare</i><br>
+            Porttitor Ultrices,<br>
+            Sagittis Tempor<br>
+            2022<br>
+            <br>
+            <i>Aliquam Dolor</i><br>
+            Netus Curabitur,<br>
+            Porta Libero<br>
+            2022<br>
+            <br>
+            <i>Euismod Gravida</i><br>
+            Egestas Nibh,<br>
+            Blandit Tellus<br>
+            2022<br>
+            <br>
+            <i>Tristique</i><br>
+            Phasellus Ornare,<br>
+            Porta Libero<br>
+            2022<br>
+            <br>
+            <i>Faucibus</i><br>
+            Lacinia Convallis,<br>
+            Duis Quam<br>
+            2022<br>
+            <br>
+            Mattis Sollicitudin Ultricies<br>
+            Dignissim Luctus,<br>
+            Congue Ipsum,<br>
+            Porta Libero<br>
+            2022<br>
+            <br>
+            <i>Egestas</i><br>
+            Condimentum Senectus,<br>
+            Purus Aliquet,<br>
+            Porta Libero<br>
+            2021<br></column-unit></column-set><br><br><br>
+            <hr><column-set gutter="1rem" mobile-hide-empty="false" mobile-stack="true"><column-unit slot="0" span="4">Awards</column-unit><column-unit slot="1" span="8"><i>Tempus Egestas</i> Nibh Vestibulum<br>
+            Facilisis: Ultricies Ornare Ligula<br>
+            2021<br>
+            <br>
+            <i>Rhoncus Auctor Ornare</i>; Tincidunt Tristique, Porta Libero<br>
+            2020<br></column-unit></column-set><br><br><br><hr><column-set><column-unit slot="0" span="4">Press<br></column-unit><column-unit slot="1" span="8">'<i>Vestibulum Inceptos Gravida</i>', Ornare Review,<br>
+            by Tincidunt Nisl<br>
+            2024<br>
+            <br>
+            'Ullamcorper Faucibus (Congue) Euismod', by Ligula Parturient, Bibendum Review Porta Libero<br>
+            2023<br>
+            <br>
+            Dictumst Tristique, Facilisis Magazine, Edition Two, Porta Libero<br>
+            2021<br>
+            <br>
+            Auctor Adipiscing Art Magazine, Porta Libero<br>
+            2020<br>
+            <br>
+            Sollicitudin Ornare Magazine,<br>
+            Porta Libero<br>
+            2020 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></column-unit></column-set><br><br><br><hr><br><br><br><br><br><span style="color: rgba(0, 0, 0, 0.4);">Last Updated 24.10.31</span>
+        </aside>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
 

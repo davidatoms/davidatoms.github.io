@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
+
+body {
+    font-family: 'Karla', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    color: #333;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+}
+
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* ==========================================================================
+   PANE STYLES
+   ========================================================================== */
+
+.left-pane, 
+.middle-pane, 
+.right-pane {
+    padding: 1rem 2rem;
+    overflow-y: auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.left-pane {
+    position: relative; /* For absolute positioning of clock */
+}
+
+.left-pane {
+    flex: 0 0 25%;
+}
+
+.middle-pane {
+    flex: 0 0 50%;
+    border-left: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border-right: 0.1rem solid rgba(0, 0, 0, 0.15);
+}
+
+.right-pane {
+    flex: 0 0 25%;
+}
+
+/* ==========================================================================
+   COMPONENTS
+   ========================================================================== */
+
+/* Digital Clock */
+.digital-clock {
+    color: rgba(0, 0, 0, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.9em;
+    margin-top: 0.25rem;
+    position: static; /* reset absolute positioning */
+}
+
+.clock-icon {
+    width: 0.9em;
+    height: 0.9em;
+    fill: currentColor;
+}
+
+.dark-mode-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.dark-mode-toggle input {
+    accent-color: #555;
+}
+
+.ai-mode-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.ai-mode-toggle input {
+    accent-color: #007acc;
+}
+
+/* Pane headers alignment */
+.pane-header {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1;
+}
+
+/* Column System */
+column-set {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+column-unit {
+    display: block;
+}
+
+column-unit[span="4"] {
+    flex-basis: 33.33%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+column-unit[span="8"] {
+    flex-basis: 66.66%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* Lineated Lists */
+.lineated {
+    list-style: none;
+    padding: 0;
+}
+
+.lineated li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.lineated li::before {
+    content: "– ";
+    padding-right: 5px;
+}
+
+/* Media Item Placeholder */
+media-item {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* 16 : 9 aspect ratio */
+    background-color: #e5e5e5;
+    position: relative;
+    border: 1px solid #d1d1d1;
+    margin: 1rem 0;
+}
+
+media-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0.06) 50%, transparent 50%, transparent 100%);
+    background-size: 100% 100%;
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .left-pane, 
+    .middle-pane, 
+    .right-pane {
+        flex: 1 1 100%;
+        border: none;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.15);
+        height: auto;
+        overflow-y: visible;
+    }
+
+    .right-pane {
+        border-bottom: none;
+    }
+
+    column-set {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    column-unit[span="4"],
+    column-unit[span="8"] {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-pane, 
+    .middle-pane, 
+    .right-pane {
+        padding: 1rem;
+    }
+}
+
+/* ==========================================================================
+   DARK MODE
+   ========================================================================== */
+body.dark-mode {
+    background-color: #161616;
+    color: #f1f1f1;
+}
+
+body.dark-mode a {
+    color: #f1f1f1;
+}
+
+body.dark-mode hr {
+    border-top-color: #444;
+}
+
+body.dark-mode .middle-pane {
+    border-left-color: #444;
+    border-right-color: #444;
+}
+
+body.dark-mode media-item {
+    background-color: #333;
+    border-color: #444;
+} 
