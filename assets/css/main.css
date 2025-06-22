@@ -162,6 +162,16 @@ column-unit[span="8"] {
     padding-right: 5px;
 }
 
+/* Notes Lists */
+.notes-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.notes-list li::before {
+    content: "– "; /* dash bullet */
+}
+
 /* Media Item Placeholder */
 media-item {
     display: block;
@@ -184,6 +194,12 @@ media-item::after {
     background-image: linear-gradient(135deg, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0.06) 50%, transparent 50%, transparent 100%);
     background-size: 100% 100%;
     pointer-events: none;
+}
+
+/* Coming Soon label */
+.coming-soon {
+    color: rgba(0,0,0,0.4);
+    font-style: italic;
 }
 
 /* ==========================================================================
