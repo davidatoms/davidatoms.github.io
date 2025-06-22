@@ -250,24 +250,24 @@ media-item::after {
    DARK MODE
    ========================================================================== */
 body.dark-mode {
-    background-color: #161616;
-    color: #f1f1f1;
+    background-color: #000;
+    color: #d0ffd0; /* light greenish text */
 }
 
 body.dark-mode a {
-    color: #f1f1f1;
+    color: #aaffaa;
 }
 
 body.dark-mode hr {
-    border-top-color: #444;
+    border-top-color: #00ff88; /* light green */
 }
 
 body.dark-mode .middle-pane {
-    border-left-color: #444;
-    border-right-color: #444;
+    border-left-color: #00ff88;
+    border-right-color: #00ff88;
 }
 
 body.dark-mode media-item {
-    background-color: #333;
-    border-color: #444;
+    background-color: #111;
+    border-color: #00ff88;
 } 

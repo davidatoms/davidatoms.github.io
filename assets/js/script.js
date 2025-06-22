@@ -98,6 +98,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (aiInput && !aiInput.dataset.initialised) {
         aiInput.dataset.initialised = 'true';
         aiInput.addEventListener('change', function() {
+            if (this.checked) {
+                alert('AI features are coming soon. Stay tuned!');
+            }
             document.body.classList.toggle('ai-enabled', this.checked);
             localStorage.setItem('aiEnabled', this.checked);
         });
