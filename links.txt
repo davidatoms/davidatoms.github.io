@@ -1,3 +1,0 @@
-instagram=https://www.instagram.com/davidadams271828
-linkedin=https://www.linkedin.com/in/davidadams64
-github=https://www.github.com/davidatoms
