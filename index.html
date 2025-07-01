@@ -83,7 +83,15 @@
             <p>Books</p>
             <p>Sports</p>
             <p>Scrapbook</p>
-            <span style="color: rgba(0, 0, 0, 0.4);">Last Updated 24.10.31</span>
+            <span style="color: rgba(0, 0, 0, 0.4);" id="last-updated"></span>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const lastUpdatedElement = document.getElementById('last-updated');
+                    const options = { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'UTC' };
+                    const lastUpdatedDate = new Date('2023-11-01T00:00:00Z').toLocaleDateString('en-GB', options);
+                    lastUpdatedElement.textContent = `Last Updated ${lastUpdatedDate}`;
+                });
+            </script>
         </aside>
     </div>
 
@@ -92,6 +100,7 @@
     <script src="assets/js/clock.js"></script>
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/js/search.js"></script>
+    <script src="assets/js/hotkeys.js"></script>
     <script src="assets/js/go-skiing.js"></script>
     <script src="assets/js/david-cool.js"></script>
     
