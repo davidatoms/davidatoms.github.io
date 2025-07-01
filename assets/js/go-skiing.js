@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.checked && localStorage.getItem('coolMode') === 'true') {
                 // Prevent the toggle and show message
                 this.checked = false;
-                showToggleMessage("I'm already cool when I'm skiing! 🎿❄️");
+                showToggleMessage("Skiing is cool.");
                 return;
             }
             
