@@ -3,116 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAVID ADAMS</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>David Adams</title>
+    <link rel="stylesheet" href="assets/css/minimal.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <meta name="description" content="Minimal three-pane portfolio layout">
+    <meta name="author" content="David Adams">
 </head>
 <body>
-    <div class="main-container">
-        <aside class="left-pane">
-            <!-- Profile Picture -->
-            <div style="text-align: center; margin-bottom: 1.5rem;">
-                <img src="assets/images/me/profile.jpg" alt="David Adams" style="width: 250px; height: 250px; object-fit: cover;">
+    <div class="container" role="presentation">
+        <aside id="visual" class="pane pane--left" aria-label="Visuals">
+            <p><strong>Abstractions ◙ </strong></p>
+            <div class="project-panel">
+                <img class="img" src="assets/images/abstract/electrode_correlation_matrix.png" alt="">
             </div>
-            
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <a href="index.html" style="text-decoration: none; color: #333;">
-                    <div style="font-weight: bold; font-size: 1.1rem;">DAVID ADAMS</div>
-                    <div style="font-size: 0.9rem; margin-top: 0.25rem;">IN THE MARGINS</div>
-                </a>
+            <div class="project-panel">
+                <img class="img" src="assets/images/abstract/phoneme_embeddings_space.png" alt="">
             </div>
-
-            <!-- Clock -->
-            <div style="margin-bottom: 2rem; color: #666;">
-                <svg style="width: 16px; height: 16px; vertical-align: middle; margin-right: 0.5rem;" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"></circle>
-                    <line x1="12" y1="12" x2="12" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
-                    <line x1="12" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
-                </svg>
-                <digital-clock pad-hour="true" twentyfour-hour="true"></digital-clock>
-            </div>
-
-            <!-- Checkboxes -->
-            <div style="margin-bottom: 2rem;">
-                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">
-                    <input type="checkbox" id="dark-toggle" style="margin-right: 0.5rem;"> Dark mode
-                </label>
-                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">
-                    <input type="checkbox" id="go-skiing-toggle" style="margin-right: 0.5rem;"> Go skiing
-                </label>
-                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">
-                    <input type="checkbox" id="make-me-cool-toggle" style="margin-right: 0.5rem;"> Make me cool
-                </label>
-                <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">
-                    <input type="checkbox" id="hotkey-toggle" checked style="margin-right: 0.5rem;"> Enable hotkeys
-                </label>
-            </div>
-
-            <!-- Contact -->
-            <div>
-                <div style="font-size: 0.9rem; font-weight: bold; margin-bottom: 1rem;">CONTACT</div>
-                <div style="font-size: 0.9rem;">
-                    <a href="mailto:davidadams14159@gmail.com" style="display: block; margin-bottom: 0.5rem; text-decoration: none; color: #333;">Email</a>
-                    <a href="https://www.instagram.com/davidadams271828/" target="_blank" style="display: block; margin-bottom: 0.5rem; text-decoration: none; color: #333;">Instagram</a>
-                    <a href="https://www.github.com/davidatoms" target="_blank" style="display: block; margin-bottom: 0.5rem; text-decoration: none; color: #333;">GitHub</a>
-                </div>
+            <div class="project-panel">
+                <img class="img" src="assets/images/abstract/phoneme_word_bipartite.png" alt="">          
             </div>
         </aside>
-        
-        <main class="middle-pane">
-            <div class="search-bar" style="margin-bottom: 2rem;">
-                <input type="text" id="search-input" placeholder="Search..." style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
-            </div>
-            <div class="simple-projects-list">
-                <div class="project-item">Google Wants Wiz, <a>Coming Soon</a></div>
-                <div class="project-item">Trump Playing Battleship, <a>Coming Soon</a></div>
-                <div class="project-item">Do you mergers, acquisitions, and IPOs have long COVID? <a>Coming Soon</a></div>
-                <div class="project-item">Why you're getting priced out of the AI market, <a>Coming Soon</a></div>
-                <div class="project-item">DeepSeek, Wifi, and the Battle for Your Attention, <a>Coming Soon</a></div>
-                <div class="project-item">Thesis <a>Coming Soon</a></div>
-                <div class="project-item">Internal GPTs, Risk of Collusion, and Antitrust <a>Coming Soon</a></div
-            </div>
 
-            <br><br><br><span style="color: rgba(0, 0, 0, 0.4);">
-            © David Adams 2025 </span>
+        <main id="work" class="pane pane--center" aria-label="Graphic">
+            <p><strong>Working opinions, projects, and research. ⅏</strong></p>
+            <ul class="list">
+                <li><a href="https://docs.google.com/document/d/1khnkdWviy5VQX7oNBEWDhUC_XSmwCvyX2QoFt0IbJ2s/edit?usp=sharing">Phonemes and Artificial Intelligence</a></li>             
+            </ul>
         </main>
-        
-        <aside class="right-pane">
-            <span class="pane-header">Other Stuff</span>
-            <p>Resume</p>
-            <p>Books</p>
-            <p>Sports</p>
-            <p>Scrapbook</p>
-            <span style="color: rgba(0, 0, 0, 0.4);" id="last-updated"></span>
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    const lastUpdatedElement = document.getElementById('last-updated');
-                    const options = { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'UTC' };
-                    const lastUpdatedDate = new Date('2023-11-01T00:00:00Z').toLocaleDateString('en-GB', options);
-                    lastUpdatedElement.textContent = `Last Updated ${lastUpdatedDate}`;
-                });
-            </script>
-        </aside>
-    </div>
 
-    <!-- Simple JavaScript -->
-    <script src="assets/js/front-page-shape.js"></script>
-    <script src="assets/js/clock.js"></script>
-    <script src="assets/js/dark-mode.js"></script>
-    <script src="assets/js/search.js"></script>
-    <script src="assets/js/hotkeys.js"></script>
-    <script src="assets/js/go-skiing.js"></script>
-    <script src="assets/js/david-cool.js"></script>
-    
-    <!-- Project Counter -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const projectItems = document.querySelectorAll('.project-item');
-            const projectCount = document.getElementById('project-count');
-            if (projectCount) {
-                projectCount.textContent = projectItems.length;
-            }
-        });
-    </script>
+        <aside id="profile" class="pane pane--right" aria-label="Profile">
+            <div class="profile-grid" style="display: block; align-items: start;">
+                <p><strong>David Adams -.. .- ...- .. -..  .- -.. .- -- ...</strong></p>
+                <img class="img" src="assets/images/daviddavid.JPG" alt="Portrait of David Adams">
+                <p style="text-align: center;"><strong>֍</strong></p>
+                <p>I am researching technology's impact on humanity and the intersection of artificial and biological neural networks, with focus on automation and augmentation that enhances human reasoning and collaboration.</p>
+                <p>Connect with me on <a href="https://github.com/davidatoms" target="_blank" rel="noopener"><strong>GitHub</strong></a> and <a href="https://linkedin.com/in/davidadams64" target="_blank" rel="noopener"><strong>LinkedIn</strong></a>. He's interested in collaborating on projects and learning about your work.</p>
+                <p>The best ways to contact me are via <a href="mailto:davidadams14159@gmail.com"><strong>davidadams14159@gmail.com</strong></a> or <a href="mailto:dadams64@jhu.edu"><strong>dadams64@jhu.edu</strong></a></p>
+                <p>I don't have an instagram but his dog does! <a href="https://instagram.com/daisywulf" target="_blank" rel="noopener"><strong>@daisywulf</strong></a></p>
+                <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞</p>
+            </div>
+        </aside>
+
 </body>
-</html> 
+</html>
