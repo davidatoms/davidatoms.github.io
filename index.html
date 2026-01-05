@@ -10,6 +10,10 @@
     <meta name="author" content="David Adams">
 </head>
 <body>
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <span id="toggleIcon">Light</span>
+    </button>
+    
     <div class="container" role="presentation">
         <aside id="visual" class="pane pane--left" aria-label="Visuals">
             <p><strong>Media</strong></p>
@@ -67,6 +71,38 @@
                 <p>𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞</p>
             </div>
         </aside>
+    </div>
+
+    <script>
+        // Dark mode toggle functionality
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const toggleIcon = document.getElementById('toggleIcon');
+        const body = document.body;
+
+        // Check for saved dark mode preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            toggleIcon.textContent = 'Dark';
+        }
+
+        // Toggle dark mode on button click
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            let theme = 'light';
+            if (body.classList.contains('dark-mode')) {
+                theme = 'dark';
+                toggleIcon.textContent = 'Dark';
+            } else {
+                toggleIcon.textContent = 'Light';
+            }
+            
+            // Save preference to localStorage
+            localStorage.setItem('theme', theme);
+        });
+    </script>
 
 </body>
 </html>

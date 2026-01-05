@@ -48,6 +48,41 @@
   --col-right-max: 480px;
 }
 
+/* Dark mode color scheme */
+body.dark-mode {
+  --bg: #1a1a1a;
+  --fg: #e0e0e0;
+  --muted: #a0a0a0;
+  --border: #333333;
+  --link: #4d9fff;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  position: fixed;
+  top: var(--space-3);
+  right: var(--space-3);
+  z-index: 1000;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background: var(--border);
+}
+
+/* Smooth transitions for dark mode */
+body, .pane, .img {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
