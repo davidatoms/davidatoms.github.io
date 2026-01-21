@@ -147,6 +147,7 @@ a:hover { text-decoration: underline; }
 .muted { color: var(--muted); }
 .list { list-style: none; padding: 0; margin: 0; }
 .list li { padding: 6px 0; border-bottom: 1px solid #eee; }
+.profile-grid .list li { border-bottom: none; }
 .meta { font-size: 11px; color: var(--muted); }
 .img { width: 100%; height: auto; display: block; border: 1px solid var(--border); }
 
