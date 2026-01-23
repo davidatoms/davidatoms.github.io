@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowflake Data Privacy Policy | David Adams</title>
+    <link rel="stylesheet" href="../assets/css/minimal.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <meta name="description" content="Data Privacy Policy for Snowflake Marketplace">
+    <meta name="author" content="David Adams">
+    <style>
+        /* Minimal override for policy text readability if needed */
+        .policy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .policy-content h2 {
+            margin-top: 2rem;
+        }
+
+        .policy-content ul {
+            padding-left: 20px;
+        }
+
+        /* Back button styling */
+        .back-button {
+            position: absolute;
+            left: 16px;
+            color: var(--fg);
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .back-button:hover {
+            text-decoration: underline;
+            color: var(--link);
+        }
+
+        @media (max-width: 600px) {
+            .site-title {
+                display: none;
+                /* Hide title on very small screens if needed, or adjust spacing */
+            }
+
+            .back-button {
+                position: static;
+                /* Let it flow on mobile if needed, or keep absolute */
+            }
+
+            .site-header {
+                justify-content: space-between;
+                /* Space out if title is hidden or we want both */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Dark mode toggle similar to index.html -->
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <span id="toggleIcon">Light</span>
+    </button>
+
+    <div class="site-header">
+        <a href="../index.html" class="back-button" aria-label="Back to Home">
+            ← Back
+        </a>
+        <div class="site-title">Snowflake Data Privacy Policy</div>
+    </div>
+
+    <div class="pane" style="overflow-y: auto; height: calc(100vh - 56px);">
+        <main class="policy-content" role="main">
+            <h1>Data Privacy Policy</h1>
+            <p><strong>Effective Date:</strong> January 22, 2026</p>
+
+            <h2>1. Scope and Purpose</h2>
+            <p>This Privacy Policy governs the data products (the "Data") provided by dammastock, L.L.C. ("Provider")
+                via the Snowflake Marketplace. This policy outlines how we handle information and the standards we
+                maintain for the data we sell.</p>
+
+            <h2>2. Data Sourcing and Compliance</h2>
+            <p>We are committed to the ethical and legal sourcing of data. We represent and warrant that the Data
+                provided:</p>
+            <ul>
+                <li><strong>Anonymization:</strong> Has been aggregated or de-identified such that it does not
+                    constitute "Personal Information" under CCPA/CPRA or "Personal Data" under GDPR, or;</li>
+                <li><strong>Lawful Basis:</strong> Has been collected under a valid legal basis with all necessary
+                    consents and permissions for commercial redistribution.</li>
+                <li><strong>Prohibited Content:</strong> Does not contain "Protected Health Information" (PHI) as
+                    defined by HIPAA or sensitive financial identifiers, unless explicitly stated in the listing
+                    documentation.</li>
+            </ul>
+
+            <h2>3. Data Access and Collection Limits</h2>
+            <p>The Snowflake Marketplace architecture ensures a "privacy-by-design" relationship.</p>
+            <ul>
+                <li><strong>No Access to Consumer Environment:</strong> Provider has no access to your Snowflake
+                    account, your underlying data, or the queries you run against our Data.</li>
+                <li><strong>No PII Collection:</strong> We do not collect names, email addresses, or payment details
+                    from Consumers. All billing and identity management are handled exclusively by Snowflake Inc.</li>
+                <li><strong>Aggregated Metrics:</strong> We may receive high-level usage telemetry from Snowflake (e.g.,
+                    number of active consumers, total queries) to improve our data offerings.</li>
+            </ul>
+
+            <h2>4. Data Security and Integrity</h2>
+            <p>We implement commercially reasonable technical and organizational measures to ensure the Data is
+                accurate, secure, and free from malicious code. However, the Data is provided on an "As-Is" basis, and
+                we do not guarantee that the Data will be error-free or uninterrupted.</p>
+
+            <h2>5. Consumer Obligations</h2>
+            <p>By subscribing to our Data, the Consumer agrees to:</p>
+            <ul>
+                <li><strong>No Re-Identification:</strong> Refrain from any attempt to re-identify individuals or
+                    households from the Data.</li>
+                <li><strong>Lawful Use:</strong> Use the Data only for lawful purposes and in compliance with all
+                    applicable local, state, and international regulations.</li>
+                <li><strong>Attribution:</strong> Adhere to any attribution requirements specified in the individual
+                    listing.</li>
+            </ul>
+
+            <h2>6. Third-Party Data Processing</h2>
+            <p>Snowflake Inc. acts as an independent service provider. Consumers are encouraged to review the Snowflake
+                Privacy Notice to understand how Snowflake manages Marketplace transaction data and metadata.</p>
+
+            <h2>7. Updates to this Policy</h2>
+            <p>We reserve the right to update this policy to reflect changes in our data practices or legal obligations.
+                The "Effective Date" at the top of this page will indicate when the last changes were made.</p>
+
+            <h2>8. Contact Information</h2>
+            <p>For questions regarding data lineage, rights requests, or technical support, please contact:</p>
+            <p>
+                <strong>Data Privacy Lead:</strong> David Adams<br>
+                <strong>Email:</strong> <a href="mailto:davidadams14159@gmail.com">davidadams14159@gmail.com</a>
+            </p>
+        </main>
+    </div>
+
+    <script>
+        // Copied dark mode logic from index.html for consistency
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const toggleIcon = document.getElementById('toggleIcon');
+        const body = document.body;
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            toggleIcon.textContent = 'Dark';
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            let theme = 'light';
+            if (body.classList.contains('dark-mode')) {
+                theme = 'dark';
+                toggleIcon.textContent = 'Dark';
+            } else {
+                toggleIcon.textContent = 'Light';
+            }
+            localStorage.setItem('theme', theme);
+        });
+    </script>
+</body>
+
+</html>
