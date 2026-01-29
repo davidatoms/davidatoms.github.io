@@ -31,11 +31,12 @@
 }
 
 :root {
-  --bg: #ffffff;
-  --fg: #222222;
-  --muted: #666666;
-  --border: #dddddd;
-  --link: #0059b3;
+  --bg: #fbfbf8;
+  --bg-alt: #f3f3ef;
+  --fg: #1f1f1f;
+  --muted: #5b5b5b;
+  --border: #d6d6d6;
+  --link: #1f4e79;
   --font: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --space-1: 8px;
   --space-2: 12px;
@@ -56,10 +57,11 @@
 /* Dark mode color scheme */
 body.dark-mode {
   --bg: #1a1a1a;
+  --bg-alt: #222222;
   --fg: #e0e0e0;
   --muted: #a0a0a0;
   --border: #333333;
-  --link: #4d9fff;
+  --link: #8fb6ff;
 }
 
 /* Dark mode toggle button */
@@ -102,7 +104,8 @@ body {
 body {
   margin: 0;
   font-family: var(--font);
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.6;
   color: var(--fg);
   background: var(--bg);
   height: 100vh;
@@ -113,7 +116,9 @@ body {
 
 a {
   color: var(--link);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
 
 a:hover {
@@ -125,7 +130,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   /* Changed to center the content */
-  height: var(--header-h);
+  height: 64px;
   padding: 0 var(--space-3);
   border-bottom: 1px solid var(--border);
   position: sticky;
@@ -136,8 +141,9 @@ a:hover {
 
 .site-title {
   font-weight: 600;
-  letter-spacing: 0.02em;
-  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-size: 15px;
+  text-transform: uppercase;
   text-align: center;
   /* Center the title */
 }
@@ -145,7 +151,7 @@ a:hover {
 .nav {
   display: flex;
   gap: var(--space-3);
-  font-size: 12px;
+  font-size: 13px;
   justify-content: center;
   /* Center the navigation items */
 }
@@ -159,7 +165,7 @@ a:hover {
 }
 
 .pane {
-  padding: var(--space-4);
+  padding: 28px;
   overflow-y: auto;
 }
 
@@ -206,7 +212,7 @@ a:hover {
 
 .list li {
   padding: 6px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border);
 }
 
 .profile-grid .list li {
