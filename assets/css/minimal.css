@@ -1,5 +1,7 @@
 /* Minimal three-pane theme: clean borders, dense typography, hidden scrollbars */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
 /* Optional Graphik webfont. Drop licensed files into assets/fonts/graphik/ */
 @font-face {
   font-family: 'Graphik';
@@ -34,7 +36,7 @@
   --muted: #666666;
   --border: #dddddd;
   --link: #0059b3;
-  --font: "EB Garamond", Garamond, "Adobe Garamond Pro", "Times New Roman", Times, serif;
+  --font: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --space-1: 8px;
   --space-2: 12px;
   --space-3: 16px;
