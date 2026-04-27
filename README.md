@@ -1,6 +1,6 @@
-# DAVID'S MARGINS - Personal Blog
+# DAVID'S MARGINS - Personal Portfolio
 
-A modern, responsive personal blog focused on economic insights and analysis.
+A modern, responsive personal portfolio focused on research, technology, and data science.
 
 ## Project Structure
 
